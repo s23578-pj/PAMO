@@ -1,4 +1,3 @@
-//Author: Jakub Styn
 package com.example.myapplication;
 
 import android.os.Bundle;
