@@ -10,10 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
+        android:theme="@style/Theme.BMICalculator"
         tools:targetApi="31">
         <activity
-            android:name=".StartActivity"
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaloriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
