@@ -75,6 +75,29 @@
         app:layout_constraintTop_toBottomOf="@+id/calculateButton"
         app:layout_constraintVertical_bias="0.742" />
 
+    <Button
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToRecipesButton"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/shopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart"
+        app:layout_constraintVertical_bias="0.361" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="114dp"
