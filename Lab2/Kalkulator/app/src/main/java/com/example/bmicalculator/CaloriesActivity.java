@@ -17,7 +17,7 @@ public class CaloriesActivity extends AppCompatActivity {
     private EditText weightInput, heightInput, ageInput;
     private RadioButton maleButton, femaleButton;
     private TextView caloriesResult;
-    private double extractPalValue(String palString) {
+    public double extractPalValue(String palString) {
         try {
             String numberPart = palString.substring(palString.lastIndexOf("-") + 1).trim();
             return Double.parseDouble(numberPart);

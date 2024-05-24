@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
     EditText weightInput, heightInput;
     Button calculateButton;
     TextView bmiResult;
+    Button chart_button;
 
+    Button shopping_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         heightInput = findViewById(R.id.heightInput);
         calculateButton = findViewById(R.id.calculateButton);
         bmiResult = findViewById(R.id.bmiResult);
+        chart_button = findViewById(R.id.chart);
+        shopping_button = findViewById(R.id.shopping);
 
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,9 +51,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        chart_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent chartIntent = new Intent(MainActivity.this, BMIChart.class);
+                startActivity(chartIntent);
+            }
+        });
+
+        shopping_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent shoppingIntent = new Intent(MainActivity.this, ShoppingList.class);
+                startActivity(shoppingIntent);
+            }
+        });
     }
 
-    private void calculateBMI() {
+    public void calculateBMI() {
         String weightStr = weightInput.getText().toString();
         String heightStr = heightInput.getText().toString();
 
